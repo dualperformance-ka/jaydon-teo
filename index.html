@@ -84,9 +84,10 @@ h2{font-size:clamp(26px,5vw,40px);margin:12px 0 30px}
 .steps .s{background:var(--panel);padding:18px 24px;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline}
 .steps .dt{font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:.08em;color:var(--blue)}
 .steps p{color:var(--mute);font-size:17px}
-.cta{display:inline-block;margin-top:30px;background:var(--blue);color:#06181F;font-family:'Anton',sans-serif;text-transform:uppercase;font-size:19px;padding:18px 32px;text-decoration:none;transition:transform .18s ease}
-.cta:hover{transform:translateY(-2px)}
-.cta:focus-visible{outline:2px solid var(--ice);outline-offset:4px}
+.booked{margin-top:30px;border:1px solid var(--blue);background:rgba(146,210,237,.07);padding:24px 26px}
+.booked .bk-l{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:var(--blue);text-transform:uppercase}
+.booked .bk-d{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(28px,5.5vw,44px);line-height:1;margin:12px 0 10px}
+.booked p{color:var(--mute);font-size:17px;max-width:48ch}
 footer{border-top:1px solid var(--line);padding:28px 0 52px}
 footer .fr{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 footer img{height:20px;width:auto;opacity:.75}
@@ -202,7 +203,11 @@ footer span{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;
       <div class="s"><div class="dt">MON 24 AUG</div><p>Programme goes live, built from what we actually saw.</p></div>
       <div class="s"><div class="dt">SUN 15 NOV</div><p>Time trial, end of block review, system stays with you.</p></div>
     </div>
-    <a class="cta" href="https://api.leadconnectorhq.com/widget/bookings/welcometo-dualperformance">Confirm your place</a>
+    <div class="booked">
+      <div class="bk-l">Already booked</div>
+      <div class="bk-d">Sunday 12pm</div>
+      <p>Same link as last time. Come with the payment option you want and a start date in mind.</p>
+    </div>
   </div>
 </section>
 
