@@ -236,6 +236,22 @@ footer span{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;c
   .stuck .n{font-size:30px}
   .steps .s{grid-template-columns:1fr;gap:6px}
 }
+@media (max-width:620px){
+  /* meta becomes a clean label/value ledger */
+  .meta{display:grid;grid-template-columns:1fr}
+  .meta div{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:15px 20px;border-right:none;border-bottom:1px solid var(--line)}
+  .meta div:last-child{border-bottom:none}
+  .meta .v{margin-top:0;font-size:19px;text-align:right}
+  /* week: day + tags on one line, detail beneath */
+  .week .r{grid-template-columns:1fr auto;grid-template-areas:"day tags" "what what";gap:9px 12px;padding:16px 20px}
+  .week .day{grid-area:day}
+  .week .tags{grid-area:tags;justify-content:flex-end}
+  .week .what{grid-area:what}
+}
+@media (max-width:420px){
+  .terms .a{font-size:30px}
+  .fig{font-size:clamp(52px,15vw,126px)}
+}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .rv{opacity:1;transform:none;transition:none}
